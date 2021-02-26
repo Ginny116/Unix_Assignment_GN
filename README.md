@@ -27,3 +27,15 @@ By inspecting this file I learned that:
 3. 82763 bytes
 4. 38K 
 5. 15 columns
+
+##Data Processing
+
+###Maize Data
+
+here is my snippet of code used for data processing
+Here is my brief description of what this code does
+
+###Teosinte Data
+
+here is my snippet of code used for data processing
+Here is my brief description of what this code does
