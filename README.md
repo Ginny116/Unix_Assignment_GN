@@ -1,7 +1,7 @@
-#Unix_Assignment_GN
-##Data Inspection
+# Unix_Assignment_GN
+## Data Inspection
 
-###Attributes of fang_et_al_genotypes
+### Attributes of fang_et_al_genotypes
 
 here is my snippet of code used for data inspection:
 1. $ wc fang_et_al_genotypes.txt
@@ -15,7 +15,7 @@ By inspecting this file I learned that:
 4. 6.1M
 5. 986 columns
 
-###Attributes of snp_position.txt
+### Attributes of snp_position.txt
 
 here is my snippet of code used for data inspection
 1. $ wc snp_position.txt
@@ -29,9 +29,9 @@ By inspecting this file I learned that:
 4. 38K 
 5. 15 columns
 
-##Prep_Data Processing
+## Prep_Data Processing
 
-###Maize Data
+### Maize Data
 
 $ grep -E "ZMMLR|ZMMIL|ZMMMR|Sample_ID" fang_et_al_genotypes.txt > maize_genotypes.txt
 This command searches for ZMMLR, ZMMIL, ZMMMR and Sample_ID and then save into a new file called maize_genotypes
@@ -57,7 +57,7 @@ merge snp position with genotypes
 $sort -k2,2 maize_transposed_genotypes_joined.bed > maize_transposed_genotypes_joined_chr.bed
 sort in chromosome orders, column 2.
 
-###Teosinte Data
+### Teosinte Data
 
 $ grep -E "ZMPBA|ZMPIL|ZMPJA|Sample_ID" fang_et_al_genotypes.txt > teosinte_genotypes.txt 
 #grep ZMPBA, ZMPIL, and ZMPJA
@@ -152,7 +152,7 @@ $ sed 's/?/-/g' maize_transposed_genotypes_joined_chr1.bed | sort -k3,3nr > maiz
 2. g was used to change all '?', otherwise, only '?' before '/' would be changed
 
 Repeat same things for Teosinte Data
-###Teosinte Data
+### Teosinte Data
 
 $ sed -n '1,155p' teosinte_transposed_genotypes_joined_chr.bed > teosinte_transposed_genotypes_joined_chr1.bed
 $ sed -n '156,208p' teosinte_transposed_genotypes_joined_chr.bed > teosinte_transposed_genotypes_joined_chr10.bed
