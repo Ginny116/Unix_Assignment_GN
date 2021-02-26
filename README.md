@@ -1,4 +1,4 @@
-# Unix_Assignment_GN
+#Unix_Assignment_GN
 ##Data Inspection
 
 ###Attributes of fang_et_al_genotypes
@@ -76,7 +76,7 @@ $ sort -k3,3 teosinte_transposed_genotypes_joined.bed > teosinte_transposed_geno
 #sort chrom colum
 
 $ grep -v "^#" teosinte_transposed_genotypes_joined_chr.bed | cut -f3 | uniq -c
-# count chro
+#count chro
 output
      153 1
      53 10
